@@ -1,7 +1,8 @@
 package com.qa.garage;
 
-public class Vehicle {
+abstract class Vehicle {
 		
+		private int id;
 		private String colour;
 		private int numberWheels;
 		private String model;
@@ -11,12 +12,13 @@ public class Vehicle {
 		
 		// Constructors
 		public Vehicle() {
-			super();
+		
 		}
 				
-		public Vehicle(String colour, int numberWheels, String model, String make, int year,
+		public Vehicle(int id, String colour, int numberWheels, String model, String make, int year,
 				String transmission) {
-			super();
+			
+			this.id  = id;
 			this.colour = colour;
 			this.numberWheels = numberWheels;
 			this.model = model;
@@ -25,10 +27,23 @@ public class Vehicle {
 			this.transmission = transmission;
 		}
 		
-		public void carNoise() {
+		
+		public void noise() {
 			// default noise
 			System.out.println("PUT PUT");
 		}
+		
+		
+		// getters and setters
+		public int getId() {
+			return id;
+		}
+		
+		public void setId(int id) {
+			
+			this.id = id;
+		}
+		
 		
 		public String getColour() {
 			return colour;
@@ -70,9 +85,11 @@ public class Vehicle {
 		}
 
 
+		
 		public int getYear() {
 			return year;
 		}
+
 
 
 		public void setYear(int year) {
