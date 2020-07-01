@@ -25,14 +25,14 @@ package com.qa.garage;
 				+ ", getTransmission()=" + getTransmission() + "]";
 	}
 
-	public void transmission(String transmission) {
-		
-		if (transmission == "automatic") {
-			System.out.println("This car is automatic.");		
-		}else {
-			System.out.println("This car is manual.");
-		}
-	}
+//	public void transmission(String transmission) {
+//		
+//		if (transmission == "automatic") {
+//			System.out.println("This car is automatic.");		
+//		}else {
+//			System.out.println("This car is manual.");
+//		}
+//	}
 	
 	
 }

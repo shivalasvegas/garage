@@ -21,13 +21,12 @@ public class Garage {
 			System.out.println(vehicle);
 		}
 	}
-//	
-//	public void fixVehicle(String newVehicle) {
-//		this.newVehicle = newVehicle;
+	
+//	public void fixVehicle(Vehicle vehicle) {
+
 //		
-//		//System.out.println("Vehicle year: " + vehicle.get(0).getYear() + " array size: " + vehicle.size());  // test statement
+//
 //		
-//		      //System.out.println(vehicle.getYear()); // test statement
 //		      
 //		      if (newVehicle.getYear() < 2000) {
 //		    	  charge = 100.00;
@@ -38,24 +37,7 @@ public class Garage {
 //		      
 //	}
 //		
-//	public void fixVehicle() {
-//		
-//		//System.out.println("Vehicle year: " + vehicle.get(0).getYear() + " array size: " + vehicle.size());  // test statement
-//		for (int i = 0; i < vehicle.size(); i++) {
-//		      //System.out.println(vehicle.get(i).getYear()); // test statement
-//		      
-//		      if (vehicle.get(i).getYear() < 2000) {
-//		    	  charge = 100.00;
-//		      }else {
-//		    	  charge = 50.00;
-//		      }
-//		      System.out.println("Your bill for car made in the year " + vehicle.get(i).getYear() + " is: " + charge);
-//		      
-//		    }
-//		
-//		
-//		
-//	}
+
 
 	
 }

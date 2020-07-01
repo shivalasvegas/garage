@@ -1,20 +1,27 @@
 package com.qa.garage;
 
-public class Lorry extends Vehicle {
-	private int year;
-	
-	public Lorry(int year) {
-		this.year = year;
-	}
-	public void lorryNoise() {
-		System.out.println("Vroooooooooom");
-	}
-	public int getYear() {
-		return year;
-	}
+class Lorry extends Vehicle {
+		// Constructors
+		public Lorry() {
+			super();	
+		}
+		
+		public Lorry(int id, String colour, int numberWheels, String model, String make, int year, String transmission) {
+			super(id, colour, numberWheels, model, make, year, transmission);
+		}
+		
+		
+		
+		@Override
+		public String toString() {
+			return "Lorry [getId()=" + getId() + ", getColour()=" + getColour() + ", getNumberWheels()="
+					+ getNumberWheels() + ", getModel()=" + getModel() + ", getMake()=" + getMake() + ", getYear()="
+					+ getYear() + ", getTransmission()=" + getTransmission() + "]";
+		}
 
-	public void setYear(int year) {
-		this.year = year;
-	}
+		@Override
+		public void noise() {
+			System.out.println("Vroooooooom! Vrooooom!");		
+		}
 	
 }

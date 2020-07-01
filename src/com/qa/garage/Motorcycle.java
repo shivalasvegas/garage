@@ -1,18 +1,29 @@
 package com.qa.garage;
 
-public class Motorcycle {
-	private int year;
+class Motorcycle extends Vehicle {
 	
-	public void motorcycleNoise() {
+	// Constructors
+		public Motorcycle() {
+			super();	
+		}
+		
+		public Motorcycle(int id, String colour, int numberWheels, String model, String make, int year, String transmission) {
+			super(id, colour, numberWheels, model, make, year, transmission);
+		}
+	
+		
+	
+	@Override
+		public String toString() {
+			return "Motorcycle [getId()=" + getId() + ", getColour()=" + getColour() + ", getNumberWheels()="
+					+ getNumberWheels() + ", getModel()=" + getModel() + ", getMake()=" + getMake() + ", getYear()="
+					+ getYear() + ", getTransmission()=" + getTransmission() + "]";
+		}
+
+	@Override
+	public void noise() {
 		System.out.println("Brrrrrr Grrrrr Brrrrr");
 	}
-	public int getYear() {
-		return year;
-	}
-
-
-	public void setYear(int year) {
-		this.year = year;
-	}
+	
 	
 }
