@@ -40,7 +40,6 @@ abstract class Vehicle {
 		}
 		
 		public void setId(int id) {
-			
 			this.id = id;
 		}
 		
