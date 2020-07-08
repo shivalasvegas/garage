@@ -9,6 +9,7 @@ abstract class Vehicle {
 		private String make;
 		private int year;
 		private String transmission;
+		private int mileage;
 		
 		// Constructors
 		public Vehicle() {
@@ -95,6 +96,13 @@ abstract class Vehicle {
 			this.year = year;
 		}
 
+		public int getMileage() {
+			return mileage;
+		}
+		
+		public void setMileage(int mileage) {
+			this.mileage = mileage;
+		}
 
 		public String getTransmission() {
 			return transmission;

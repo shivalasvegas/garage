@@ -18,9 +18,9 @@ public class Garage {
 	}
 
 	public void readVehicles() {
-		for(Vehicle vehicle : vehicleArray) {
-			System.out.println(vehicle);
-		}
+//		for(Vehicle vehicle : vehicleArray) {
+//			System.out.println(vehicle);
+//		}
 	}
 	
 	public void fixVehicle(int vehicleId) {
