@@ -23,7 +23,7 @@ public class Garage {
 		}
 	}
 	
-public void fixVehicle(int vehicleId) {
+	public void fixVehicle(int vehicleId) {
 		
 		for(Vehicle vehicle : vehicleArray) {
 			if (vehicleId == vehicle.getId()) {

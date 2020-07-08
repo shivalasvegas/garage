@@ -19,9 +19,7 @@ public static void main(String[] args) {
 		bostins.fixVehicle(5);
 		bostins.removeVehicle(2);
 		bostins.clearGarage();
-		bostins.readVehicles();
-		bostins.fixVehicle(5);
-
+		
 	}
 
 }
